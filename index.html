@@ -12,18 +12,32 @@
     <header class=" bg-blue-700 py-4 text-white text-xl font-comic-relief text-center font-bold tracking-wide">Game Suwit By Syaf</header>
     <!-- Header End -->
     
-    <main class="pembungkus-game grid px-4 my-5 h-[85vh] gap-7">
+    <main class="pembungkus-game grid grid-row-2 auto-rows-fr px-4 my-5 h-[85vh] gap-7 relative lg:grid-cols-2 lg:grid-rows-1">
         <!-- Player Start -->
-        <div class="area-player bg-blue-400 rounded-2xl h-1/2">
-            <div class="content flex ">
-                <div class="icon-player bg-slate-700 w-3xs h-[256px]">test</div>
-            </div>
+        <div class="area-player bg-sky-400 rounded-2xl flex flex-col justify-center items-center relative md:flex-row lg:flex-col">
+            <div class="name font-bold w-20 h-10 bg-cyan-300 flex justify-center items-center absolute rounded-md top-1 left-1 shadow-md md:top-2 md:left-2 lg:w-24 lg:h-12">Player</div>
+            <div class="name font-bold w-12 h-12 bg-white flex justify-center items-center absolute rounded-full top-1 right-1 shadow-lg md:top-2 md:right-2 lg:w-16 lg:h-16">0</div>
+            <div class="player h-[130px] w-[130px] bg-slate-400 md:w-[190px] md:h-[190px] lg:w-[340px] lg:h-[340px]"></div>
+            <ul class="pilihan-player flex mt-4 gap-5 md:flex-col md:mt-0 md:absolute md:left-1/6  lg:flex-row lg:bottom-1/12 lg:left-1/2 lg:transform lg:-translate-x-1/2">
+                <li class="bg-slate-200 w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"><img src="" alt="" class=""></li>
+                <li class="bg-slate-200 w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"><img src="" alt="" class=""></li>
+                <li class="bg-slate-200 w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"><img src="" alt="" class=""></li>
+            </ul>
         </div>
         <!-- Player End -->
 
         <!-- Comp start -->
-        <div class="area-comp bg-sky-300 "></div>
+        <div class="area-comp bg-cyan-300 flex justify-center items-center rounded-2xl relative">
+            <div class="comp h-[130px] w-[130px] bg-slate-400 md:w-[190px] md:h-[190px] lg:w-[340px] lg:h-[340px]"></div>
+            <div class="name font-bold w-20 h-10 bg-sky-400 flex justify-center items-center absolute rounded-md bottom-1 left-1 shadow-md md:bottom-2 md:left-2 lg:top-2 lg:w-24 lg:h-12">Comp</div>
+            <div class="name font-bold w-12 h-12 bg-white flex justify-center items-center absolute rounded-full bottom-1 right-1 shadow-lg md:bottom-2 md:right-2 lg:top-2 lg:bottom-0 lg:w-16 lg:h-16">0</div>
+        </div>
         <!-- Comp end -->
+        
+        <!-- Hasil start -->
+        <div class="hasil w-[200px] h-[100px] bg-slate-300 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl lg:w-[250px] lg:h-[130px]"></div>
+        <!-- Hasil End -->
     </main>
+    
 </body>
 </html>
