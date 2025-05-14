@@ -6,3 +6,11 @@
 @theme{
     --font-comic-relief: "Comic Relief", system-ui;
 }
+
+.active{
+    @apply scale-150 drop-shadow-lg drop-shadow-white;
+}
+
+.animation-pilihan{
+    @apply transition-transform group-hover:scale-150 group-hover:drop-shadow-lg group-hover:drop-shadow-white cursor-pointer;
+}
