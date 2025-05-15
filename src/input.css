@@ -14,3 +14,13 @@
 .animation-pilihan{
     @apply transition-transform group-hover:scale-150 group-hover:drop-shadow-lg group-hover:drop-shadow-white cursor-pointer;
 }
+
+.win{
+    @apply shadow-green-500;
+}
+.lose{
+    @apply shadow-red-500;
+}
+.draw{
+    @apply shadow-blue-600;
+}

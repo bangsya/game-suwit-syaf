@@ -14,30 +14,31 @@
     
     <main class="pembungkus-game grid grid-row-2 auto-rows-fr px-4 my-5 h-[85vh] gap-7 relative lg:grid-cols-2 lg:grid-rows-1 font-comic-relief">
         <!-- Player Start -->
-        <div class="area-player bg-sky-400 rounded-2xl flex flex-col justify-center items-center relative md:flex-row lg:flex-col shadow-xl">
+        <div class="area-player bg-sky-400 rounded-2xl flex flex-col justify-center items-center relative md:flex-row lg:flex-col shadow-lg">
             <div class="name font-bold w-20 h-10 bg-cyan-300 flex justify-center items-center absolute rounded-md top-1 left-1 shadow-md md:top-2 md:left-2 lg:w-24 lg:h-12 lg:text-xl">Player</div>
-            <div class="name font-bold w-12 h-12 bg-white flex justify-center items-center absolute rounded-full top-1 right-1 shadow-lg md:top-2 md:right-2 lg:w-16 lg:h-16 lg:text-xl">0</div>
-            <div class="player h-[140px] w-[140px] md:w-[190px] md:h-[190px] lg:w-[340px] lg:h-[340px]"><img src="dist/img/orang.png" alt="image playe" class="w-full h-full object-center" id="player"></div>
+            <div class="name font-bold w-12 h-12 bg-white flex justify-center items-center absolute rounded-full top-1 right-1 shadow-lg md:top-2 md:right-2 lg:w-16 lg:h-16 lg:text-xl" id="score-player">0</div>
+            <div class="player h-[140px] w-[140px] md:w-[190px] md:h-[190px] lg:w-[340px] lg:h-[340px]"><img src="dist/img/orang.png" alt="image playe" class="w-full h-full object-center"></div>
             <ul class="pilihan-player flex mt-4 gap-5 md:flex-col md:mt-0 md:absolute md:left-1/6  lg:flex-row lg:bottom-1/12 lg:left-1/2 lg:transform lg:-translate-x-1/2">
-                <li class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 group"><img src="dist/img/gajah.png" alt="image playe" class="w-full h-full object-center animation-pilihan"></li>
-                <li class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 group"><img src="dist/img/orang.png" alt="image playe" class="w-full h-full object-center animation-pilihan active"></li>
-                <li class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 group"><img src="dist/img/semut.png" alt="image playe" class="w-full h-full object-center animation-pilihan"></li>
+                <li class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 group"><img src="dist/img/gajah.png" alt="image playe" class="w-full h-full object-center animation-pilihan" id="gajah"></li>
+                <li class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 group"><img src="dist/img/orang.png" alt="image playe" class="w-full h-full object-center animation-pilihan active" id="orang"></li>
+                <li class="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 group"><img src="dist/img/semut.png" alt="image playe" class="w-full h-full object-center animation-pilihan" id="semut"></li>
             </ul>
         </div>
         <!-- Player End -->
 
         <!-- Comp start -->
         <div class="area-comp bg-cyan-300 flex justify-center items-center rounded-2xl relative  shadow-lg">
-            <div class="comp h-[140px] w-[140px] md:w-[190px] md:h-[190px] lg:w-[340px] lg:h-[340px]"><img src="dist/img/semut.png" alt="image playe" class="w-full h-full object-center" id="comp"></div>
+            <div class="comp h-[140px] w-[140px] md:w-[190px] md:h-[190px] lg:w-[340px] lg:h-[340px]"><img src="dist/img/semut.png" alt="image computer" class="w-full h-full object-center"></div>
             <div class="name font-bold w-20 h-10 bg-sky-400 flex justify-center items-center absolute rounded-md bottom-1 left-1 shadow-md md:bottom-2 md:left-2 lg:top-2 lg:w-24 lg:h-12 lg:text-xl">Comp</div>
-            <div class="score font-bold w-12 h-12 bg-white flex justify-center items-center absolute rounded-full bottom-1 right-1 shadow-lg md:bottom-2 md:right-2 lg:top-2 lg:bottom-0 lg:w-16 lg:h-16 lg:text-xl">0</div>
+            <div class="score font-bold w-12 h-12 bg-white flex justify-center items-center absolute rounded-full bottom-1 right-1 shadow-lg md:bottom-2 md:right-2 lg:top-2 lg:bottom-0 lg:w-16 lg:h-16 lg:text-xl" id="score-comp">0</div>
         </div>
         <!-- Comp end -->
         
         <!-- Hasil start -->
-        <div class="hasil w-[200px] h-[100px] bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl lg:w-[250px] lg:h-[130px] shadow-lg"></div>
+        <div class="hasil w-[200px] h-[100px] bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl lg:w-[250px] lg:h-[130px] shadow-lg flex justify-center items-center font-bold md:text-xl lg:text-3xl"></div>
         <!-- Hasil End -->
     </main>
     
+<script type="module" src="dist/js/scipt.js"></script>
 </body>
 </html>
